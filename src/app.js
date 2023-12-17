@@ -6,6 +6,7 @@ import cors from 'cors';
 import xss from 'xss-clean';
 import createError from 'http-errors';
 import httpStatus from 'http-status';
+import logger from './utils/logger.js'
 import { errorConverter, errorHandler } from './middleware/errorHandler.js';
 import { authLimiter } from './middleware/rateLimiter.js'
 import ApiError from './utils/ApiError.js';
